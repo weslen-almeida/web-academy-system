@@ -7,6 +7,11 @@ export default defineNuxtConfig({
     }
   },
   modules: [
-    '@nuxt/ui'
+    "@nuxt/ui",
+    "@pinia/nuxt",
   ],
+  // Usar as Stores Globalmente (não precisa importar)
+  // pinia: {
+  //   storesDirs: ['./stores/**']
+  // }
 })
