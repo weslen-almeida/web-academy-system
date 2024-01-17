@@ -1,17 +1,11 @@
-<script setup>
+<script setup lang="ts">
     
 </script>
 
 <template>
-  <UFooter>
-FOOTER TESTE
-
-
-    <template #right>
-        <UButton>01</UButton>
-        <UButton>02</UButton>
-        <UButton>03</UButton>
-      
-    </template>
-  </UFooter>
+  <div class="w-full bg-zinc-800 border-t border-zinc-700 p-4">
+    <UFooter>
+      FOOTER TESTE
+    </UFooter>
+  </div>
 </template>
