@@ -30,17 +30,17 @@ const links = [{
 </script>
 
 <template>
-    <div class="h-screen w-screen flex">
-        <LayoutAside />
-        <div class="h-full w-full">
-            <LayoutHeader class="bg-zinc-800 border-t border-zinc-700 p-4" />
-            <div class="w-full h-[calc(100vh-50px)]">
-                <UMain>
-                    <NuxtPage/>
-                </UMain>
-            </div>
-            <LayoutFooter class="bg-zinc-800 border-t border-zinc-700 p-4"/>
-        </div>
-    </div>
-
+    <aside class="w-60 bg-zinc-500 p-6">
+        <UVerticalNavigation :links="links">
+            <template #avatar="{ link }">
+            <UAvatar
+                v-if="link.avatar"
+                v-bind="link.avatar"
+                size="3xs"
+                loading="lazy"
+            />
+            <UIcon v-else name="i-heroicons-user-circle-20-solid" class="text-lg" />
+            </template>
+        </UVerticalNavigation>
+    </aside>
 </template>
