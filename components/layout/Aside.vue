@@ -1,54 +1,30 @@
 <script setup lang="ts">
 
-const props = defineProps({
-  menuToggle: {
-    type: Boolean,
-    required: true
+const menu = ref([
+  {
+    label: 'Inicio',
+    to: 'https://github.com/benjamincanac',
+    icon: 'i-heroicons-home'
+  }, 
+  {
+    label: 'Alunos',
+    to: 'https://github.com/Atinux',
+    icon: 'i-heroicons-users'
+  },
+  {
+    label: 'Treinos',
+    to: 'https://github.com/smarroufin',
+    icon: 'i-heroicons-fire'
   }
-})
+]);
 
-const links = [{
-  avatar: {
-    src: 'https://ipx.nuxt.com/s_16x16/gh_avatar/benjamincanac',
-    srcset: 'https://ipx.nuxt.com/s_32x32/gh_avatar/benjamincanac 2x',
-    alt: ''
-  },
-  label: 'benjamincanac',
-  to: 'https://github.com/benjamincanac',
-  target: '_blank'
-}, {
-  avatar: {
-    src: 'https://ipx.nuxt.com/s_16x16/gh_avatar/Atinux',
-    srcset: 'https://ipx.nuxt.com/s_32x32/gh_avatar/Atinux 2x',
-    alt: ''
-  },
-  label: 'Atinux',
-  to: 'https://github.com/Atinux',
-  target: '_blank'
-}, {
-  avatar: {
-    src: 'https://ipx.nuxt.com/s_16x16/gh_avatar/smarroufin',
-    srcset: 'https://ipx.nuxt.com/s_32x32/gh_avatar/smarroufin 2x',
-    alt: ''
-  },
-  label: 'smarroufin',
-  to: 'https://github.com/smarroufin',
-  target: '_blank'
-}]
 </script>
 
 <template>
-  <aside class="bg-zinc-500 p-6" :class="props.menuToggle ? 'w-60': 'w-20'">
-    <UVerticalNavigation :links="links">
-      <template #avatar="{ link }">
-        <UAvatar
-          v-if="link.avatar"
-          v-bind="link.avatar"
-          size="3xs"
-          loading="lazy"
-        />
-        <UIcon v-else name="i-heroicons-user-circle-20-solid" class="text-lg" />
-      </template>
-    </UVerticalNavigation>
+  <aside class="w-60 bg-zinc-800 py-6 px-2">
+    <!-- Colocar a logo aqui -->
+
+    <!-- Menu -->
+    <UVerticalNavigation :links="menu" />
   </aside>
 </template>
