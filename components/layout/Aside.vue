@@ -11,17 +11,17 @@ const menu = ref([
   {
     label: 'Inicio',
     to: 'https://github.com/benjamincanac',
-    icon: 'i-heroicons-home'
+    icon: 'i-heroicons-home-20-solid'
   }, 
   {
     label: 'Alunos',
     to: 'https://github.com/Atinux',
-    icon: 'i-heroicons-users'
+    icon: 'i-heroicons-users-20-solid'
   },
   {
     label: 'Treinos',
     to: 'https://github.com/smarroufin',
-    icon: 'i-heroicons-fire'
+    icon: 'i-heroicons-fire-20-solid'
   }
 ]);
 
@@ -40,7 +40,14 @@ const menu = ref([
     </div>
 
     <div class="mt-8">
-      <UVerticalNavigation :links="menu" />
+      <UVerticalNavigation :links="menu">
+        <!-- <template #icon="{ link }">
+          <UIcon class="text-lg" :name="link.icon"/>
+        </template> -->
+        <!-- <template #default="{ link }">
+          <span  class="group-hover:text-red relative" >{{ link.label }}</span>
+        </template> -->
+      </UVerticalNavigation>
     </div>
   </aside>
 </template>
