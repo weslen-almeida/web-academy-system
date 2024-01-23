@@ -40,14 +40,7 @@ const menu = ref([
     </div>
 
     <div class="mt-8">
-      <UVerticalNavigation :links="menu">
-        <!-- <template #icon="{ link }">
-          <UIcon class="text-lg" :name="link.icon"/>
-        </template> -->
-        <!-- <template #default="{ link }">
-          <span  class="group-hover:text-red relative" >{{ link.label }}</span>
-        </template> -->
-      </UVerticalNavigation>
+      Tette
     </div>
   </aside>
 </template>

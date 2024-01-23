@@ -12,7 +12,7 @@
 
 <template>
     <div class="w-full bg-zinc-800 border-t border-zinc-700 p-4">
-        <UHeader>
+        <!-- <UHeader>
             <UButton
                 @click="isOpenMenuToggle"
                 icon="i-heroicons-bars-3-16-solid"
@@ -22,6 +22,7 @@
                 variant="soft"
                 class="p-1"
             />
-        </UHeader>
+        </UHeader> -->
+        header
     </div>
 </template>

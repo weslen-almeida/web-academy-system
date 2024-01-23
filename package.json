@@ -11,15 +11,17 @@
   },
   "devDependencies": {
     "nuxt": "^3.9.0",
+    "vite-plugin-vuetify": "^2.0.1",
     "vue": "^3.4.3",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.2.5",
+    "vuetify": "^3.5.1"
   },
   "dependencies": {
-    "@nuxt/ui": "^2.12.0",
+    "@mdi/font": "^7.4.47",
     "@pinia/nuxt": "^0.5.1",
     "pinia": "^2.1.7"
   },
   "overrides": {
-    "vue": "latest"
+    "vue": "^3.4.3"
   }
 }

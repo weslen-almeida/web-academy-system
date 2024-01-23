@@ -1,32 +1,11 @@
 
 <template>
-    <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-        <p class="text-gray-700 dark:text-gray-300">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-          quia, nulla! Maiores et perferendis eaque, exercitationem praesentium
-          nihil.
-        </p>
-    <div class="flex gap-2">
-        Home page
-    </div>
-    <div>
-        Api Response:
-    </div>
 
     <div>
-        <UButton>Button</UButton>
+        home
+        <v-btn density="comfortable">Comfortable Button</v-btn>
     </div>
-
-    <ClientOnly>
-    <UButton
-      :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'"
-      color="gray"
-      variant="ghost"
-      aria-label="Theme"
-      @click="isDark = !isDark"
-    />
-
-  </ClientOnly>
+    
     
 </template>
 

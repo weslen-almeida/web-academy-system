@@ -1,3 +1,4 @@
+
 <script setup lang="ts">
 
 const toggleMenu = ref(false);
@@ -10,16 +11,13 @@ function isOpenMenuToggle() {
 </script>
 
 <template>
-  <div class="h-full w-full flex">
+  <v-app>
     <LayoutAside :menu-toggle="toggleMenu" />
-    <div class="h-full w-full">
-      <LayoutHeader :menu-toggle="toggleMenu" :is-open-menu-toggle="isOpenMenuToggle" />
-      <div class="w-full h-[calc(100vh-50px)] p-6">
-        <UMain>
-          <NuxtPage/>
-        </UMain>
-      </div>
-      <LayoutFooter class="bg-zinc-800 border-t border-zinc-700 p-4"/>
-    </div>
-  </div>
+    <LayoutHeader :menu-toggle="toggleMenu" :is-open-menu-toggle="isOpenMenuToggle" />
+    <v-main>
+      <NuxtPage />
+    </v-main>
+    <LayoutFooter class=""/>
+
+  </v-app>
 </template>
