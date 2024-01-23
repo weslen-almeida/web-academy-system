@@ -11,18 +11,15 @@
 </script>
 
 <template>
-    <div class="w-full bg-zinc-800 border-t border-zinc-700 p-4">
-        <!-- <UHeader>
-            <UButton
+    <!-- <div class="w-full bg-zinc-800 border-t border-zinc-700 p-4"> -->
+        <v-app-bar title="Application bar">
+            <div class="justify-items-start">
+              <v-btn
                 @click="isOpenMenuToggle"
-                icon="i-heroicons-bars-3-16-solid"
-                size="xl"
-                color="primary"
-                square
-                variant="soft"
-                class="p-1"
-            />
-        </UHeader> -->
-        header
-    </div>
+                icon="mdi-menu"
+                variant="flat"
+              />
+            </div>
+        </v-app-bar>
+    <!-- </div> -->
 </template>
