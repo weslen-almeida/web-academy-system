@@ -11,15 +11,25 @@
 </script>
 
 <template>
-    <!-- <div class="w-full bg-zinc-800 border-t border-zinc-700 p-4"> -->
-        <v-app-bar title="Application bar">
-            <div class="justify-items-start">
-              <v-btn
-                @click="isOpenMenuToggle"
-                icon="mdi-menu"
-                variant="flat"
-              />
-            </div>
-        </v-app-bar>
-    <!-- </div> -->
+    <v-app-bar 
+        color="white"
+        elevation="1"
+        flat
+    >
+        <template v-slot:prepend>
+            <v-app-bar-nav-icon 
+                @click="props.isOpenMenuToggle"
+            />
+        </template>
+
+        <v-spacer></v-spacer>
+
+        <v-btn icon>
+            <v-icon>mdi-magnify</v-icon>
+        </v-btn>
+
+        <v-btn icon>
+            <v-icon>mdi-heart</v-icon>
+        </v-btn>
+    </v-app-bar>
 </template>
