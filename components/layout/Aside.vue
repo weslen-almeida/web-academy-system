@@ -32,24 +32,36 @@ const rail = ref(true);
   <v-navigation-drawer 
     :rail="props.menuToggle"
     permanent
+    color="indigo-darken-3"
   >
-    <v-list>
+    <v-list >
       <div>
-      <v-list-item 
-        :title="props.menuToggle ? 'L' : 'Logo da Academia'"
-        class="mb-2"
-      />
+        <v-list-item 
+          :title="props.menuToggle ? 'L' : 'Logo da Academia'"
+        />
       </div>
-      <v-list-item 
-        v-for="(item, i) in menu"
-        :key="i"
-        :value="item"
-      >
-        <template #prepend>
-          <v-icon :icon="item.icon" class="mr-n5"/>
-        </template>
-        <v-list-item-title v-text="item.text"/>
-      </v-list-item>
+      <v-divider class="mt-2"></v-divider>
+      <div class="mt-4">
+        <v-list-item
+          v-for="(item, i) in menu"
+          :key="i"
+          :value="item"
+          rounded="s-xl"
+          active-class="menu-active"
+        >
+          <template #prepend>
+            <v-icon :icon="item.icon" class="mr-n5"/>
+          </template>
+          <v-list-item-title v-text="item.text"/>
+        </v-list-item>
+      </div>
     </v-list>
   </v-navigation-drawer>
 </template>
+
+<style>
+.menu-active {
+  background-color: white;
+  color: black;
+}
+</style>
