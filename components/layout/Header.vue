@@ -62,7 +62,8 @@
                     color="primary"
                     v-bind="props"
                     @click="isClick = !isClick"
-                    :append-icon="!isClick ? 'mdi-arrow-down'  :'mdi-arrow-up'"
+                    :append-icon="isClick ? 'mdi-menu-up'  :'mdi-menu-down'"
+                    variant="plain"
                 >
                     Fulano de tal
                 </v-btn>
