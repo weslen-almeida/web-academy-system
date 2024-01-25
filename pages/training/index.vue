@@ -8,18 +8,12 @@ const { data } = await useFetch(
     },
 )
 
-console.log(data)
-
-
 </script>
 
 <template>
-
     <div>
       <h1>Pagina Treino</h1>
     </div>
-    
-    
 </template>
 
 

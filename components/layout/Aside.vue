@@ -15,12 +15,12 @@ const menu = ref([
   }, 
   {
     text: 'Alunos',
-    to: '/training',
+    to: '/students',
     icon: 'mdi-account-multiple'
   },
   {
     text: 'Treinos',
-    to: '#',
+    to: '/training',
     icon: 'mdi-weight-lifter'
   }
 ]);
@@ -47,7 +47,7 @@ const rail = ref(true);
           v-for="(item, i) in menu"
           :key="i"
           :value="item"
-          :href="item.to"
+          :to="item.to"
           rounded="s-xl"
         >
           <template #prepend>
