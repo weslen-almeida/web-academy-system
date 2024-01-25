@@ -16,7 +16,7 @@ console.log(data)
 <template>
 
     <div>
-      <h1>Pagina inicial</h1>
+      <h1>Pagina Treino</h1>
     </div>
     
     

@@ -10,12 +10,12 @@ const props = defineProps({
 const menu = ref([
   {
     text: 'Inicio',
-    to: '/home',
+    to: '/',
     icon: 'mdi-home'
   }, 
   {
     text: 'Alunos',
-    to: '#',
+    to: '/training',
     icon: 'mdi-account-multiple'
   },
   {
@@ -32,7 +32,8 @@ const rail = ref(true);
   <v-navigation-drawer 
     :rail="props.menuToggle"
     permanent
-    color="indigo-darken-3"
+    color="deep-purple-darken-4"
+    border="0"
   >
     <v-list >
       <div>
@@ -46,8 +47,8 @@ const rail = ref(true);
           v-for="(item, i) in menu"
           :key="i"
           :value="item"
+          :href="item.to"
           rounded="s-xl"
-          active-class="menu-active"
         >
           <template #prepend>
             <v-icon :icon="item.icon" class="mr-n5"/>

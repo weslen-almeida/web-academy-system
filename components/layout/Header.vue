@@ -1,9 +1,5 @@
 <script setup lang="ts">
     const props = defineProps({
-        menuToggle: {
-            type: Boolean,
-            required: true
-        },
         isOpenMenuToggle: {
             type: Function,
         }
@@ -13,7 +9,7 @@
 <template>
     <v-app-bar 
         color="white"
-        elevation="1"
+        elevation="0"
         flat
     >
         <template v-slot:prepend>
