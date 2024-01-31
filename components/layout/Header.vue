@@ -41,12 +41,22 @@
 
         <v-spacer></v-spacer>
 
-        <v-btn icon>
-            <v-icon>mdi-magnify</v-icon>
+        <v-btn icon color="primary">
+            <v-icon>mdi-account-plus</v-icon>
+            <v-tooltip
+                activator="parent"
+                location="bottom"
+                color="primary"
+            >Cadastrar novo aluno</v-tooltip>
         </v-btn>
 
         <v-btn icon>
             <v-icon>mdi-bell</v-icon>
+            <v-tooltip
+                activator="parent"
+                location="bottom"
+                color="primary"
+            >Notificações</v-tooltip>
         </v-btn>
 
         <v-menu
