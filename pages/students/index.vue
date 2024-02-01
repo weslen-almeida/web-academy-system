@@ -97,18 +97,15 @@ const tags = [
 <template>
     <v-sheet
         class="text-body-2 mx-auto"
-        width="98%"
     >
         <v-container>
-            <v-col cols=12 class="mt-4">
+            <v-col cols=12>
             <h2 class="text-center"><v-icon class="mr-3">mdi-account-multiple</v-icon>Alunos</h2>
             </v-col>
             <v-row no-gutters class="mt-2">
                 <v-col cols="12" class="d-flex justify-start mb-6">
-                    <v-btn 
-                        prepend-icon="mdi-account-plus"
-                        color="success"
-                    >Novo aluno</v-btn>
+                    <student-modal />
+
                 </v-col>
                 <v-col cols="12" sm="9">
                     <v-text-field
