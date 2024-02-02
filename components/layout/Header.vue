@@ -1,3 +1,4 @@
+import { StudentModal } from '../../.nuxt/components';
 <script setup lang="ts">
     const props = defineProps({
         isOpenMenuToggle: {
@@ -41,15 +42,8 @@
 
         <v-spacer></v-spacer>
 
-        <v-btn icon color="primary">
-            <v-icon>mdi-account-plus</v-icon>
-            <v-tooltip
-                activator="parent"
-                location="bottom"
-                color="primary"
-            >Cadastrar novo aluno</v-tooltip>
-        </v-btn>
-
+        <StudentModal :is-header="true"/>        
+        
         <v-btn icon>
             <v-icon>mdi-bell</v-icon>
             <v-tooltip
