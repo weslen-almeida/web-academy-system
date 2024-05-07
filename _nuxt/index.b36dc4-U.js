@@ -1,1 +1,0 @@
-import{u as a,b as o}from"./fetch-utils.UVwEno_i.js";import{d as n,r,L as c,t as i,v as _,x as l}from"./entry._Roug-4P.js";const d=l("h1",null,"Pagina inicial",-1),p=[d],b=n({__name:"index",async setup(u){let e,t;r(!0);const{data:s}=([e,t]=c(()=>a(o("/user"),{method:"GET"},"$pqtWcjQkdb")),e=await e,t(),e);return console.log(s),(m,h)=>(i(),_("div",null,p))}});export{b as default};

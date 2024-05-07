@@ -1,0 +1,1 @@
+import{u as s,b as o}from"./fetch-utils.K95_-XJ5.js";import{d as a,r,L as n,t as _,v as c,x as i}from"./entry.SfAb6Wsu.js";const l=i("h1",null,"Pagina Treino",-1),m=[l],x=a({__name:"index",async setup(u){let e,t;return r(!0),[e,t]=n(()=>s(o("/user"),{method:"GET"},"$mKx4jro6b0")),e=await e,t(),(d,p)=>(_(),c("div",null,m))}});export{x as default};
