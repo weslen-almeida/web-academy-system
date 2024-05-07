@@ -8,18 +8,13 @@ const { data } = await useFetch(
     },
 )
 
-console.log(data)
-
-
 </script>
 
 <template>
-
-    <div>
+    <div class="text-center">
       <h1>Pagina inicial</h1>
+      <p>Página home do site</p>
     </div>
-    
-    
 </template>
 
 
