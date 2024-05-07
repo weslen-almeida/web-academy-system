@@ -82,8 +82,6 @@ const items = [
         plano: "Semestral",
         data: "26/01/24"
     },
- 
-    
 ];
 
 const tags = [
